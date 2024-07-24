@@ -415,7 +415,7 @@ return {
       vim.api.nvim_create_autocmd("User", {
         pattern = "NotMeNvimStarted",
         callback = function(ev)
-          local pad_footer = string.rep(" ", 8)
+          local pad_footer = string.rep(" ", 10)
           starter.config.footer = pad_footer .. " Moik Moik "
           if vim.bo[ev.buf].filetype == "ministarter" then
             pcall(starter.refresh)
