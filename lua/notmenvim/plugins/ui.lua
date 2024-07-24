@@ -383,12 +383,12 @@ return {
         evaluate_single = true,
         header = logo,
         items = {
-          new_section("Find file",       NotMeNvim.pick(),                        "Telescope"),
-          new_section("New file",        "ene | startinsert",                   "Built-in"),
-          new_section("Recent files",    NotMeNvim.pick("oldfiles"),              "Telescope"),
+          new_section("Find file",       NotMeNvim.pick(),                        "File"),
+          new_section("New file",        "ene | startinsert",                   "File"),
+          new_section("Recent files",    NotMeNvim.pick("oldfiles"),              "File"),
           new_section("Config",          NotMeNvim.pick.config_files(),           "Config"),
           new_section("Previous session", [[lua require("persistence").load()]], "Session"),
-          new_section("Quit",            "qa",                                  "Built-in"),
+          new_section("Quit",            "qa",                                  "Quit?? Why?? :("),
         },
         content_hooks = {
           starter.gen_hook.adding_bullet(pad .. " ", false),
@@ -416,8 +416,7 @@ return {
         pattern = "NotMeNvimStarted",
         callback = function(ev)
           local pad_footer = string.rep(" ", 8)
-          starter.config.footer = pad_footer
-            .. " Changing the Config without NotMe's permission on NotMe's Machine is strictly prohibited "
+          starter.config.footer = pad_footer .. " Moik Moik "
           if vim.bo[ev.buf].filetype == "ministarter" then
             pcall(starter.refresh)
           end
