@@ -340,7 +340,7 @@ return {
         optional = true,
         opts = {
           defaults = {
-            ["<leader>d"] = { name = "+debug" },
+            { "<leader>d", group = "debug" },
           },
         },
       },
