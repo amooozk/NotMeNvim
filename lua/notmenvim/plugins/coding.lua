@@ -49,7 +49,7 @@ return {
           { name = "buffer" },
         }),
         formatting = {
-          format = function(entry, item)
+          format = function(_, item)
             local icons = NotMeNvim.config.icons.kinds
             if icons[item.kind] then
               item.kind = icons[item.kind] .. item.kind
@@ -215,6 +215,7 @@ return {
   -- auto complete in command line
   "hrsh7th/cmp-cmdline",
   "hrsh7th/cmp-buffer",
+  "folke/noice.nvim",
 
   require("noice").setup({
     cmdline = {
