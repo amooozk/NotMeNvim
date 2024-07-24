@@ -339,9 +339,7 @@ return {
         "folke/which-key.nvim",
         optional = true,
         opts = {
-          defaults = {
-            { "<leader>d", group = "debug" },
-          },
+          defaults = { "<leader>d", group = "debug" },
         },
       },
 
