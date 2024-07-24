@@ -416,7 +416,7 @@ return {
         pattern = "NotMeNvimStarted",
         callback = function(ev)
           local pad_footer = string.rep(" ", 10)
-          starter.config.footer = pad_footer .. " Moik Moik "
+          starter.config.footer = " Moik Moik "
           if vim.bo[ev.buf].filetype == "ministarter" then
             pcall(starter.refresh)
           end
