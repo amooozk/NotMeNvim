@@ -230,18 +230,17 @@ function Run_code_with_file()
 end
 
 wk.add({
-  { "<leader>k", group = "NotMe KeyMaps", icon = "∩ë╖" },
-  { "<leader>kc", "<cmd>lua Compile_code()<CR>", desc = "Compile Code (clang++)", icon = "ε½¿" },
-  { "<leader>kd", "<cmd>lua Debug_compile_code()<CR>", desc = "Debug Compile Code", icon = "ε½ÿ" },
-  { "<leader>kh", "<cmd>:Telescope themes<CR>", desc = "Theme Switcher", icon = "ε¡£" },
+  { "<leader>k", group = "NotMe KeyMaps", icon = ""},
+  { "<leader>kc", "<cmd>lua Compile_code()<CR>", desc = "Compile Code (clang++)", icon =  ""},
+  { "<leader>kd", "<cmd>lua Debug_compile_code()<CR>", desc = "Debug Compile Code", icon =  ""},
+  { "<leader>kh", "<cmd>:Telescope themes<CR>", desc = "Theme Switcher", icon =  ""},
   {
     "<leader>kr",
     "<cmd>lua Run_code_with_file()<CR>",
-    desc = "∩öå Run Code with Input.txt-Output.txt (c/c++)",
-    icon = "∩äü",
+    desc = " Run Code with Input.txt-Output.txt (c/c++)",
+    icon = "",
   },
-  { "<leader>kt", "<cmd>:TransparentToggle<CR>", desc = "Transparent Colorscheme Toggle", icon = "ε½å" },
-  { "<leader>kz", "<cmd>:ZenMode<CR>", desc = "Activate Zen Mode", icon = "≤░½½" },
+  { "<leader>kt", "<cmd>:TransparentToggle<CR>", desc = "Transparent Colorscheme Toggle", icon =  ""},
 })
 
 wk.setup()
