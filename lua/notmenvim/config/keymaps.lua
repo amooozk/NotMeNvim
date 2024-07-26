@@ -230,6 +230,7 @@ function Run_code_with_file()
 end
 
 wk.add({
+  {"<leader>d", group = "debug", mode = { "n", "v" }},
   { "<leader>k", group = "NotMe KeyMaps", icon = ""},
   { "<leader>kc", "<cmd>lua Compile_code()<CR>", desc = "Compile Code (clang++)", icon =  ""},
   { "<leader>kd", "<cmd>lua Debug_compile_code()<CR>", desc = "Debug Compile Code", icon =  ""},

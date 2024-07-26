@@ -24,7 +24,7 @@ function M.setup()
 end
 
 function M.welcome()
-  NotMeNvim.info("NotMeNvim: Aye Yooo!! O__o")
+  NotMeNvim.info("Aye Yooo!! O__o")
 end
 
 function M.changelog()

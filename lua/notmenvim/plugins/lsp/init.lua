@@ -335,15 +335,15 @@ return {
       },
 
       -- which key integration
-      {
-        "folke/which-key.nvim",
-        optional = true,
-        opts = {
-          defaults = {
-            ["<leader>d"] = { name = "+debug" },
-          },
-        },
-      },
+      -- {
+      --   "folke/which-key.nvim",
+      --   optional = true,
+      --   opts = {
+      --     defaults = {
+      --       ["<leader>d"] = { name = "+debug" },
+      --     },
+      --   },
+      -- },
 
       -- mason.nvim integration
       {
@@ -395,7 +395,7 @@ return {
   },
 
     config = function()
-      local Config = require("lazyvim.config")
+      local Config = require("notmenvim.config")
       vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
 
       for name, sign in pairs(Config.icons.dap) do
