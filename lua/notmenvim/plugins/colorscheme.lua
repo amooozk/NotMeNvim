@@ -3,7 +3,6 @@ return {
   {
     "folke/tokyonight.nvim",
     lazy = false,
-    opts = { style = "moon" },
   },
 
   -- catppuccin
@@ -52,9 +51,15 @@ return {
   {
     "amooozk/NotMeNvim",
     opts = {
-      -- colorscheme = "tokyonight",
       colorscheme = "catppuccin",
+      -- colorscheme = "tokyonight",
     },
   },
+  -- {
+  --   "andrew-george/telescope-themes",
+  --   config = function()
+  --     require("telescope").load_extension("themes")
+  --   end,
+  -- },
   "xiyaowong/transparent.nvim",
 }

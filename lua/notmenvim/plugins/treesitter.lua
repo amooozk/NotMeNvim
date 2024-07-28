@@ -41,7 +41,6 @@ return {
       ensure_installed = {
         "bash",
         "c",
-        "cpp",
         "diff",
         "html",
         "javascript",
@@ -128,9 +127,9 @@ return {
   },
 
   -- Automatically add closing tags for HTML and JSX
-  -- {
-  --   "windwp/nvim-ts-autotag",
-  --   event = "LazyFile",
-  --   opts = {},
-  -- },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "LazyFile",
+    opts = {},
+  },
 }
