@@ -2,14 +2,13 @@ return {
   -- tokyonight
   {
     "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "moon" },
+    lazy = false,
   },
 
   -- catppuccin
   {
     "catppuccin/nvim",
-    lazy = true,
+    lazy = false,
     name = "catppuccin",
     opts = {
       integrations = {
@@ -47,13 +46,6 @@ return {
         treesitter_context = true,
         which_key = true,
       },
-    },
-  },
-  {
-    "amooozk/NotMeNvim",
-    opts = {
-      colorscheme = "catppuccin",
-      -- colorscheme = "tokyonight",
     },
   },
   {

@@ -234,7 +234,7 @@ wk.add({
   { "<leader>k", group = "NotMe KeyMaps", icon = ""},
   { "<leader>kc", "<cmd>lua Compile_code()<CR>", desc = "Compile Code (clang++)", icon =  ""},
   { "<leader>kd", "<cmd>lua Debug_compile_code()<CR>", desc = "Debug Compile Code", icon =  ""},
-  { "<leader>kh", "<cmd>:Telescope themes<CR>", desc = "Theme Switcher", icon =  ""},
+  -- { "<leader>kh", "<cmd>:Telescope themes<CR>", desc = "Theme Switcher", icon =  ""},
   {
     "<leader>kr",
     "<cmd>lua Run_code_with_file()<CR>",
