@@ -145,19 +145,23 @@ return {
             { "location", padding = { left = 0, right = 1 } },
           },
           lualine_z = {
-            function()
-              return " " .. os.date("%R")
-            end,
+            {
+              "datetime",
+              style = "default",
+            },
           },
         },
         sections = {
           lualine_a = { "buffers" },
-          -- lualine_a = {},
           lualine_b = {},
           lualine_c = {},
           lualine_x = {},
-          lualine_y = {},
-          lualine_z = {},
+          lualine_y = { "encoding", "fileformat", "filetype" },
+          lualine_z = {
+            function()
+              return "󰣤 Me  "
+            end,
+          },
         },
       }
 
