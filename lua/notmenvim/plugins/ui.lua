@@ -159,7 +159,7 @@ return {
           lualine_y = { "encoding", "fileformat", "filetype" },
           lualine_z = {
             function()
-              return "󰣤 Me  "
+              return "󰣤   "
             end,
           },
         },
