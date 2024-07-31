@@ -1,4 +1,8 @@
 return {
+  {
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+  },
   -- tokyonight
   {
     "folke/tokyonight.nvim",
@@ -51,8 +55,7 @@ return {
   {
     "amooozk/NotMeNvim",
     opts = {
-      colorscheme = "catppuccin",
-      -- colorscheme = "tokyonight",
+      colorscheme = "nordic",
     },
   },
   -- {
