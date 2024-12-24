@@ -1,4 +1,4 @@
-# LazyVim
+# NotMeNvim == LazyVim
 
 ## Justification for Name Change
 Since I didn't know how to do it from the outside, I thought I would need to make some changes to the internal configuration. To ensure that the new LazyVim commits don't ruin everything, I created a new repository and changed the name.
@@ -8,3 +8,5 @@ Since I didn't know how to do it from the outside, I thought I would need to mak
 - **Programming Language:** C++
 - **Compiler:** clang++
 - **Debugger:** lldb
+
+https://www.lazyvim.org/
